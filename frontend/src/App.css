@@ -1,0 +1,124 @@
+/* NavBar.css */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Ultra&display=swap');
+
+.font-anton {
+  font-family: 'Anton', sans-serif;
+}
+
+.font-ultra {
+  font-family: 'Anton', sans-serif;
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Ultra', serif;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.rectangle {
+  background-color: green;
+}
+
+/* navbar styles */
+
+.rectangle:hover .circle {
+  animation: initialIncrease 1s ease-out forwards, fastIncrease 0.2s ease-in forwards;
+  opacity: 1;
+}
+
+@keyframes initialIncrease {
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes fastIncrease {
+  to {
+    transform: scale(4.4);
+  }
+}
+
+/* case studies style */
+
+.custom-long-duration {
+  transition-duration: 2s !important;
+
+}
+
+/* Navbar */
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.transition-for-bg {
+  transition: background-color 0.3s ease-in-out !important;
+}
+
+/* Marqueetwo */
+
+.marquee_container {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* TeammeMeberCard */
+.blur {
+  filter: blur(10px);
+  transition: filter 0.5s ease; 
+}
+
+.loaded {
+  filter: blur(0); 
+}
+
+/* teams */
+
+@keyframes bounce-y {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* Adjust the distance to move up and down */
+  }
+}
+
+.animate-bounce-y {
+  animation: bounce-y 2s infinite; /* Adjust the animation duration as needed */
+}
+
+/* gallery images */
+
+.bg1 {
+  background-image: url('/images/gallery/DSC_0081.jpg');
+}
+.bg2{
+  background-image: url('/images/gallery/DSC_0056.JPG');
+}
+.bg3{
+  background-image: url('/images/gallery/DSC_0039.jpg');
+}
+.bg4{
+  background-image: url('/images/gallery/DSC_1585.JPG');
+}
+.bg5{
+  background-image: url('/images/gallery/DSC_0071.JPG');
+}
+.bg6{
+  background-image: url('/images/gallery/DSC_0075.JPG');
+}
+.bg7{
+  background-image: url('/images/gallery/DSC_0070.JPG');
+}
+
+.bg8{
+  background-image: url('/images/gallery/DSC_0029.JPG');
+}
+.bg9{
+  background-image: url('/images/gallery/DSC_0026.JPG');
+}
